@@ -4,19 +4,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+            Laravel Readableの各ページをスクレイピングする<br>            
+            <a href="/scraping/0101">インストール</a><br>
+            <a href="/scraping/0102">設定</a><br>
+            <a href="/scraping/0103">ディレクトリ構造
+            </a><br>
         </div>
     </div>
 </div>
