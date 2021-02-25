@@ -29,3 +29,4 @@ Route::get('/file', function () {
 });
 //Route::get('/file-create/{driver}', 'FileController@create');
 Route::post('/file-create', 'FileController@create');
+Route::post('/file-download', 'FileController@download');

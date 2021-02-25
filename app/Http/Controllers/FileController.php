@@ -39,6 +39,19 @@ class FileController extends Controller
         return redirect('file');
     }
 
+    public function download(Request $request)
+    {
+        //
+        //dd($request);
+
+        /*
+        ドライバの指定がない場合は、
+        Storage::disk('local')を指定したとみなされ
+        \storage\app 配下の指定ファイルをダウンロードする
+        */
+        return Storage::download($request->formFile1);
+    }
+
     /**
      * Store a newly created resource in storage.
      *

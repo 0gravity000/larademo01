@@ -6,6 +6,8 @@
         <div class="col-md-8">
             <a href="/home">ホームに戻る</a><br>
             <h1>ファイル操作の実験</h1>
+            <hr>
+            <h2>ファイルの作成</h2>
             <form method="POST" action="/file-create">
                 @csrf
                 <div class="mb-3">
@@ -30,10 +32,18 @@
                       public
                     </label>
                   </div>
-                  
                 <button type="submit" class="btn btn-primary">作成</button>
             </form>
-
+            <hr>
+            <h2>ファイルのダウンロード</h2>
+            <form method="POST" action="/file-download">
+                @csrf
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">ダウンロードするファイル名を指定してください。</label>
+                    <input class="form-control" type="text" name="formFile1">
+                </div>
+                <button type="submit" class="btn btn-primary">ダウンロード</button>
+            </form>
         </div>
     </div>
 </div>
