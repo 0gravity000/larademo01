@@ -24,3 +24,8 @@ Route::get('/scrape', function () {
     return view('scrape');
 });
 Route::get('/scrape/{pageid}', 'ScrapeController@index');
+Route::get('/file', function () {
+    return view('file');
+});
+//Route::get('/file-create/{driver}', 'FileController@create');
+Route::post('/file-create', 'FileController@create');
