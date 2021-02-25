@@ -40,9 +40,19 @@
                 @csrf
                 <div class="mb-3">
                     <label for="formFile" class="form-label">ダウンロードするファイル名を指定してください。</label>
-                    <input class="form-control" type="text" name="formFile1">
+                    <input class="form-control" type="text" name="downloadFile1">
                 </div>
                 <button type="submit" class="btn btn-primary">ダウンロード</button>
+            </form>
+            <hr>
+            <h2>ファイルの取得</h2>
+            <form method="POST" action="/file-get">
+                @csrf
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">内容を取得するファイル名を指定してください。</label>
+                    <input class="form-control" type="text" name="getFile1">
+                </div>
+                <button type="submit" class="btn btn-primary">取得</button>
             </form>
         </div>
     </div>

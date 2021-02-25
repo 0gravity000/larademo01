@@ -49,7 +49,16 @@ class FileController extends Controller
         Storage::disk('local')を指定したとみなされ
         \storage\app 配下の指定ファイルをダウンロードする
         */
-        return Storage::download($request->formFile1);
+        return Storage::download($request->downloadFile1);
+    }
+
+    public function get(Request $request)
+    {
+        //
+        //dd($request);
+
+        $contents = Storage::get($request->getFile1);
+        return view('fileresult', compact('contents'));
     }
 
     /**
