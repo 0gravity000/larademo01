@@ -54,6 +54,16 @@
                 </div>
                 <button type="submit" class="btn btn-primary">取得</button>
             </form>
+            <hr>
+            <h2>ファイルのアップロード</h2>
+            <form method="POST" action="/file-upload" enctype="multipart/form-data">
+                @csrf
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">アップロードするファイルを指定してください。</label>
+                    <input class="form-control" type="file" name="uploadFile1">
+                 </div>
+                <button type="submit" class="btn btn-primary">アップロード</button>
+            </form>
         </div>
     </div>
 </div>

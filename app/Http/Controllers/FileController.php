@@ -69,7 +69,10 @@ class FileController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->file('uploadFile1'));
+
+        $path = Storage::putFile('imgs', $request->file('uploadFile1'));
+        return view('fileresult', compact('path'));
     }
 
     /**
