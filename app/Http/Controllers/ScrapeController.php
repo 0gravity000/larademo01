@@ -228,6 +228,8 @@ class ScrapeController extends Controller
         $crawler = $client->request('GET', $url);
         //dd($crawler);
 
+        //ToDo：表示できないページあり。要調査
+
         //https://symfony.com/doc/current/components/dom_crawler.html
         /*
         foreach ($crawler as $domElement) {

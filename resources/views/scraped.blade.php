@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <a href="/home">戻る</a><br>
+            <a href="/scrape">戻る</a><br>
             @foreach($tag_htmls as $tag_html)
                 {{ $tag_html }}
             @endforeach

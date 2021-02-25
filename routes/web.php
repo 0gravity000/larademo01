@@ -20,4 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/scrape', function () {
+    return view('scrape');
+});
 Route::get('/scrape/{pageid}', 'ScrapeController@index');
