@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Goutte\Client;
 
-class ScrapingController extends Controller
+class ScrapeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -267,7 +267,7 @@ class ScrapingController extends Controller
         });
         //dd($tag_htmls);
 
-        return view('scraping', compact('tag_htmls'));
+        return view('scraped', compact('tag_htmls'));
         //return view('home', compact('tag_h1s', 'tag_h2s', 'tag_h3s', 'tag_h4s'));
     }
 
