@@ -32,3 +32,6 @@ Route::post('/file-create', 'FileController@create');
 Route::post('/file-download', 'FileController@download');
 Route::post('/file-get', 'FileController@get');
 Route::post('/file-upload', 'FileController@store');
+Route::get('/responsive', function () {
+    return view('responsive');
+});
